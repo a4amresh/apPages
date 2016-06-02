@@ -1,0 +1,8 @@
+{
+	"css": [
+		"app/assets/css/app.css"
+	],
+	"js": [
+		"app/assets/js/apPages.js"
+	]
+}

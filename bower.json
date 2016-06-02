@@ -1,0 +1,15 @@
+{
+  "name": "appages",
+  "version": "1.0.0",
+  "description": "jquery pagination plugin",
+  "keywords": [
+    "jquery",
+    "plugin"
+  ],
+  "author": "Amrish Pal",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "jquery": "^2.2.4"
+  }
+}

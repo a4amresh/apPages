@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>apPages</title>
+	<!-- build:css assets/css/app.min.css -->
+	<link rel="stylesheet" href="assets/css/app.css">
+	<!-- endbuild -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+<h1>Hello World</h1>
+<script>
+	if(typeof jQuery == "undefined"){
+		document.write('<script src="assets/js/jquery.min.js">\x3Cscript>');
+	}
+</script>
+<!-- build:js assets/js/app.min.js -->
+<script src="assets/js/apPages.js"></script>
+<!-- endbuild -->
+</body>
+</html>
