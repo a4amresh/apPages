@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>apPages</title>
+    <!-- build:css assets/css/app.min.css -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container" id="blog">
+        <aside class="col-md-4">
+            <img src="assets/images/banner.jpg" alt="">
+            <h1>1</h1>
+        </aside>
+        <aside class="col-md-4">
+            <img src="assets/images/banner2.jpg" alt="">
+            <h1>2</h1>
+        </aside>
+        <aside class="col-md-4">
+            <img src="assets/images/banner.jpg" alt="">
+            <h1>3</h1>
+        </aside>
+        <aside class="col-md-4">
+            <img src="assets/images/banner2.jpg" alt="">
+            <h1>4</h1>
+        </aside>
+        <aside class="col-md-4">
+            <img src="assets/images/banner.jpg" alt="">
+            <h1>5</h1>
+        </aside>
+        <aside class="col-md-4">
+            <img src="assets/images/banner2.jpg" alt="">
+            <h1>6</h1>
+        </aside>
+        <aside class="col-md-4">
+            <img src="assets/images/banner.jpg" alt="">
+            <h1>7</h1>
+        </aside>
+        <aside class="col-md-4">
+            <img src="assets/images/banner2.jpg" alt="">
+            <h1>8</h1>
+        </aside>
+    </div>
+    <div class="container">
+        <ul class="ap-pagination"></ul>
+    </div>
+    <script>
+        if (typeof jQuery == "undefined") {
+            document.write('<script src="assets/js/jquery/jquery.min.js">\x3Cscript>');
+        }
+    </script>
+    <!-- build:js assets/js/app.min.js -->
+    <script src="assets/libs/apPlugin/apPagination.js"></script>
+    <!-- endbuild -->
+    <script>
+        $(document).ready(function() {
+            $("#blog").apPagination({
+                selctor: {
+                    target: 'aside', // if Class or id with . (dot) or #
+                    targetWrap: '',
+                    paginationWrap: '.ap-pagination'
+                },
+                animation: {
+                    enabled: true,
+                    animationIn: 'zoomIn'
+                },
+                button: {
+                    btnWrap: 'li',
+                    btnClass: 'page-btn',
+                    prevClass: 'prev', // Class name without . (dot)
+                    nextClass: 'next', // Class name without . (dot)
+                    activeClass: 'active', // Class name without . (dot)
+                    nextText: 'Next > ',
+                    prevText: ' < Prev'
+                },
+                perPage: '2',
+                mixiTupState: false
+            });
+        });
+    </script>
+</body>
+
+</html>
