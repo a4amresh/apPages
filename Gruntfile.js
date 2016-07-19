@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 options: {
                     livereload: true
                 },
-                files: "app/assets/sass/**/*.scss",
+                files: "src/assets/sass/**/*.scss",
                 tasks: ['sass']
             }
         },
@@ -17,64 +17,64 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    "app/assets/css/app.css": "app/assets/sass/app.scss"
+                    "src/assets/css/app.css": "src/assets/sass/app.scss"
                 }
             }
         },
         concat: {
             css: {
                 src: ['<%= files.css %>'],
-                dest: "app/assets/css/app.css"
+                dest: "src/assets/css/app.css"
             },
             js: {
                 src: ['<%= files.js %>'],
-                dest: "app/assets/js/app.js"
+                dest: "src/assets/js/app.js"
             }
         },
         cssmin: {
             main: {
                 files: {
-                    "app/assets/css/app.min.css": ['<%= files.css %>']
+                    "src/assets/css/app.min.css": ['<%= files.css %>']
                 }
             }
         },
         uglify: {
             main: {
                 files: {
-                    "app/assets/js/app.min.js": ['<%= files.js %>']
+                    "src/assets/js/app.min.js": ['<%= files.js %>']
                 }
             }
         },
         clean: {
-            dev: ['build/development'],
-            pro: ['build/production']
+            dev: ['dist/development'],
+            pro: ['dist/production']
         },
         copy: {
             dev: {
                 files: [{
                     expand: true,
-                    cwd: 'app/',
+                    cwd: 'src/',
                     src: ['**', '!**/sass/**'],
-                    dest: 'build/development'
+                    dest: 'dist/development'
                 }]
             },
             pro: {
                 files: [{
                     expand: true,
-                    cwd: 'app/',
+                    cwd: 'src/',
                     src: ['**', '!**/sass/**', '!**/libs/**'],
-                    dest: 'build/production'
+                    dest: 'dist/production'
                 }]
             }
         },
         useminPrepare: {
-            html: 'app/*.html',
+            html: 'src/*.html',
             options: {
-                dest: 'build/production'
+                dest: 'dist/production'
             }
         },
         usemin: {
-            html: ['build/production/*.html']
+            html: ['dist/production/*.html']
         },
         express: {
             server: {

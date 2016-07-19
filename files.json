@@ -1,8 +1,6 @@
 {
-	"css": [
-		"app/assets/css/app.css"
-	],
-	"js": [	"app/assets/libs/apPlugin/apPagination.js",
-		"app/assets/js/custom.js"
-	]
+    "css": [
+        "src/assets/css/app.css"
+    ],
+    "js": ["src/assets/libs/apPlugin/apPagination.js"]
 }
