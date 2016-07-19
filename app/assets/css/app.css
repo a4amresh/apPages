@@ -3545,5 +3545,63 @@ button.close {
     display: none !important;
   }
 }
+img {
+  max-width: 100%;
+}
+
+/*=================
+Pagination
+=================*/
+.pagination-wrap {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.ap-pagination {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 0;
+}
+.ap-pagination li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2px 7px;
+  color: #77787b;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.ap-pagination .active {
+  color: #fff;
+  background: #77787b;
+}
+.ap-pagination .prev {
+  margin-right: 10px;
+  border: 1px solid #77787b;
+}
+.ap-pagination .next {
+  margin-left: 10px;
+  border: 1px solid #77787b;
+}
+
+/*===================
+Responsive
+===================*/
+/*===================
+Max Wdith: 767px
+===================*/
+@media (max-width: 767px) {
+  .ap-pagination .next {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+  .ap-pagination .prev {
+    margin-right: 0;
+    display: block;
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

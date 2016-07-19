@@ -1,10 +1,10 @@
 {
-  "name": "appages",
+  "name": "grunjs",
   "version": "1.0.0",
-  "description": "jquery pagination plugin",
+  "description": "Gruntjs blank project",
   "keywords": [
-    "jquery",
-    "plugin"
+    "gruntjs",
+    "html5"
   ],
   "author": "Amrish Pal",
   "license": "MIT",

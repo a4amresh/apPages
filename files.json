@@ -2,7 +2,7 @@
 	"css": [
 		"app/assets/css/app.css"
 	],
-	"js": [
-		"app/assets/js/apPages.js"
+	"js": [	"app/assets/libs/apPlugin/apPagination.js",
+		"app/assets/js/custom.js"
 	]
 }
